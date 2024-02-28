@@ -21,7 +21,7 @@
 <h3>How many homework assignments do you have left to do?</h3>
 <input type="number" @bind-value=numHomeworkAssignments />
 
-<button @onclick="() => subject.NotifyObservers()">Save</button>
+<button @onclick="SaveMeasurementsAndNotifyObservers">Save</button>
 
 <script>
     window.displayTickerAlert1 = (stressLevel) => {
@@ -37,5 +37,11 @@
     private StatisticsSubject subject = new();
     private ObserverOne Observer1 = new();
     private ObserverTwo Observer2 = new();
+
+    public void SaveMeasurementsAndNotifyObservers()
+    {
+        subject.SetMeasurements(daysToBreak, numHomeworkAssignments);
+        subject.MeasurementsChanged();
+    }
 
 }

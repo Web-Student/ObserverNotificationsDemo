@@ -1,1 +1,5 @@
 Timestamp: 2/27/2024 11:25:38 PM	Homework Assignments Due: 100	Days Until Spring Break: 3		Overall Stress Level: 33
+Timestamp: 2/28/2024 9:39:37 AM	Homework Assignments Due: 100	Days Until Spring Break: 3		Overall Stress Level: 33
+Timestamp: 2/28/2024 10:12:43 AM	Homework Assignments Due: -6	Days Until Spring Break: 8		Overall Stress Level: 0
+Timestamp: 2/28/2024 10:13:23 AM	Homework Assignments Due: 10	Days Until Spring Break: 0		Overall Stress Level: 0
+Timestamp: 2/28/2024 10:13:58 AM	Homework Assignments Due: 1000	Days Until Spring Break: 5		Overall Stress Level: 200
