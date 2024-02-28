@@ -2,18 +2,19 @@
 @using Observer1.Data
 @rendermode InteractiveServer
 
-<h1>Newsletter (The Observer Pattern</h1>
+<h1>Newsletter (The Observer Pattern)</h1>
 
 <h2>First, some information: Which observers would you like to be notified of your data?</h2>
 
-<p>Console Observer: </p> <button @onclick="() => subject.Subscribe(Observer1)">Subscribe!</button>
-<button class="button" @onclick="() => subject.Unsubscribe(Observer1)">Unsubscribe</button>
+<p>Console Observer: </p> <button @onclick="ReplaceMe">Subscribe!</button>@*  //Change this line *@
+<button class="button" @onclick="ReplaceMe">Unsubscribe</button>@*  //Change this line *@
 
 <br />
 <br />
 
-<p>File Observer: </p> <button @onclick="() => subject.Subscribe(Observer2)">Subscribe!</button>
-<button @onclick="() => subject.Unsubscribe(Observer2)">Unsubscribe</button>
+<p>File Observer: </p>
+<button @onclick="ReplaceMe">Subscribe!</button>@*  //Change this line *@
+<button @onclick="ReplaceMe">Unsubscribe</button>@*  //Change this line *@
 
 <h3>How many days do you have left until the break?</h3>
 <input type="number" @bind-value=daysToBreak />
@@ -23,13 +24,6 @@
 
 <button @onclick="SaveMeasurementsAndNotifyObservers">Save</button>
 
-<script>
-    window.displayTickerAlert1 = (stressLevel) => {
-        alert(`$Your Stress level is {stressLevel}!:`);
-    };
-</script>
-
-
 @code {
     int daysToBreak = 0;
     int numHomeworkAssignments = 0;
@@ -38,10 +32,14 @@
     private ObserverOne Observer1 = new();
     private ObserverTwo Observer2 = new();
 
+    public void ReplaceMe()
+    {
+        //Delete this function!!!
+    }
+
     public void SaveMeasurementsAndNotifyObservers()
     {
-        subject.SetMeasurements(daysToBreak, numHomeworkAssignments);
-        subject.MeasurementsChanged();
+        //ToDo: fill this in!
     }
 
 }
