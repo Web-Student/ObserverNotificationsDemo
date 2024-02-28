@@ -1,4 +1,5 @@
 ﻿namespace Observer1.Data;
+//this is the finished working code
 public class StatisticsSubject : ISubject
 {
     //These are our own personal statistics to track
